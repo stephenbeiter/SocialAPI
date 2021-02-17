@@ -1,0 +1,28 @@
+{
+  "name": "socialapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephenbeiter/SocialAPI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephenbeiter/SocialAPI/issues"
+  },
+  "homepage": "https://github.com/stephenbeiter/SocialAPI#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.11.16"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
