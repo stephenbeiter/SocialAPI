@@ -30,6 +30,7 @@ const thoughtController = {
   createThought({ body }, res) {
     Thought.create(body)
       .then(({ _id }) => {
+        console.log(_id);
         return User.findOneAndUpdate(
           { _id: body.userId },
           { $push: { thoughts: _id } },
@@ -70,14 +71,14 @@ const thoughtController = {
           { new: true }
         );
       })
-      .then(dbUserData => {
-        if (!dbUserData) {
-          res.status(404).json({ message: 'No user found with this id!' });
-          return;
-        }
-        res.json(dbUserData);
-      })
+      .then(dbUserData => res.json(dbUserData))
       .catch(err => res.json(err));
+  },
+
+  deleteAllThoughts(req, res) {
+    Thought.deleteMany({})
+      .then(res.json("All Thoughts were deleted!"))
+      .catch(err => res.json(err))
   },
 
   addReaction({ params, body }, res) {
