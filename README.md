@@ -2,7 +2,7 @@
 ![License Badge](https://img.shields.io/badge/license-MIT-green)
 ## Description
 ![SocialAPI](./utils/readme.PNG)
-RESTful API for a thoughtful social network application.
+RESTful API for a thoughtful social network application. Click [here](https://drive.google.com/file/d/1TzL3r5aEa2DAWIN5KF6k__M77lBP_O8x/view) to view a walkthrough video.
 ## Table of Contents
 * [Installation](#Installation)
 * [Usage](#Usage)
